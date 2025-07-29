@@ -1,0 +1,17 @@
+name: "scrapery_dbt"
+version: "1.0"
+config-version: 2
+
+profile: "scrapery"
+
+model-paths: ["models"]
+analysis-paths: ["analysis"]
+
+models:
+  scrapery_dbt:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: table
+    marts:
+      +materialized: table

@@ -1,0 +1,6 @@
+scrapery:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../data/scrapery.duckdb

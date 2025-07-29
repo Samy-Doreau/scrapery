@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: example_staging
+    description: "Example staging layer model. Replace with your own."
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+      - name: value
+        tests:
+          - not_null
